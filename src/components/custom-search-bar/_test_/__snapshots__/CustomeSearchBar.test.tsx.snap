@@ -1,0 +1,97 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`CustomeSearchBar renders correctly 1`] = `
+<View
+  style={
+    {
+      "alignItems": "center",
+      "backgroundColor": "#FFFFFF",
+      "borderRadius": 148.5,
+      "flexDirection": "row",
+      "gap": 15,
+      "height": 73.92857142857143,
+      "marginBottom": 32.857142857142854,
+      "marginHorizontal": 40,
+      "marginTop": 32.857142857142854,
+      "paddingHorizontal": 32,
+    }
+  }
+>
+  <Image
+    source={
+      {
+        "testUri": "../../../src/assets/images/search.png",
+      }
+    }
+    style={
+      {
+        "height": 32.857142857142854,
+        "tintColor": "#000000",
+        "width": 40,
+      }
+    }
+  />
+  <TextInput
+    autoCorrect={false}
+    placeholder="Search"
+    placeholderTextColor="#232323"
+    style={
+      {
+        "flex": 1,
+        "fontSize": 21,
+        "fontWeight": "400",
+        "height": 73.92857142857143,
+      }
+    }
+  />
+  <View
+    accessibilityState={
+      {
+        "busy": undefined,
+        "checked": undefined,
+        "disabled": undefined,
+        "expanded": undefined,
+        "selected": undefined,
+      }
+    }
+    accessibilityValue={
+      {
+        "max": undefined,
+        "min": undefined,
+        "now": undefined,
+        "text": undefined,
+      }
+    }
+    accessible={true}
+    collapsable={false}
+    focusable={true}
+    onClick={[Function]}
+    onResponderGrant={[Function]}
+    onResponderMove={[Function]}
+    onResponderRelease={[Function]}
+    onResponderTerminate={[Function]}
+    onResponderTerminationRequest={[Function]}
+    onStartShouldSetResponder={[Function]}
+    style={
+      {
+        "opacity": 1,
+      }
+    }
+  >
+    <Image
+      source={
+        {
+          "testUri": "../../../src/assets/images/cancel.png",
+        }
+      }
+      style={
+        {
+          "height": 32.857142857142854,
+          "tintColor": "#000000",
+          "width": 40,
+        }
+      }
+    />
+  </View>
+</View>
+`;

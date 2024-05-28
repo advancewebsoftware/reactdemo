@@ -1,0 +1,26 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`StackNavigate renders correctly 1`] = `
+<mocked-Navigator
+  screenOptions={
+    {
+      "headerShown": false,
+    }
+  }
+>
+  <mocked-Screen
+    component={[Function]}
+    name="Home"
+  />
+  <mocked-Screen
+    component={[Function]}
+    name="WebView"
+    options={
+      {
+        "gestureEnabled": true,
+        "headerShown": false,
+      }
+    }
+  />
+</mocked-Navigator>
+`;
