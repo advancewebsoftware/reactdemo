@@ -6,6 +6,8 @@ import {TransitionPresets, createStackNavigator} from '@react-navigation/stack';
 
 const Stack = createStackNavigator<AppStackNavigatorProps>();
 
+// Main Navigation component
+
 const StackNavigation: React.FC = () => {
   return (
     <NavigationContainer>

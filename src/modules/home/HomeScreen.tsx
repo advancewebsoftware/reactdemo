@@ -15,7 +15,11 @@ import {SafeAreaView, Text, View} from 'react-native';
 import {AppStackNavigatorProps, RoutePage} from '../../types';
 import {NavigationProp, useNavigation} from '@react-navigation/native';
 
+// Home Screen to display news headlines
+
 const HomeScreen: React.FC = () => {
+
+  // Custom hook to manage data and state management
   const {
     newData,
     isSearch,
@@ -35,6 +39,7 @@ const HomeScreen: React.FC = () => {
     navigation.navigate(RoutePage.WebView, {params: {props: url}});
   };
 
+  // Used debounce function for search functionality
   const debounced = useDebouncedCallback(value => {
     onChangeText(value);
   }, 2000);

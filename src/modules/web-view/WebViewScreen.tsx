@@ -11,17 +11,12 @@ const WebViewScreen: React.FC = () => {
     useRoute<RouteProp<AppStackNavigatorProps, RoutePage.WebView>>();
   const renderPreview = params?.params?.props || "";
   const navigation = useNavigation();
+
   return (
     <View style={styles.container}>
       <SafeAreaView style={styles.safeArea} />
-      <CustomHeader
-        isHome={false}
-        onBackPress={() => navigation.goBack()}
-      />
-      <WebView
-        source={{ uri: renderPreview }}
-        style={styles.container}
-      />
+      <CustomHeader isHome={false} onBackPress={() => navigation.goBack()} />
+      <WebView source={{ uri: renderPreview }} style={styles.container} />
     </View>
   );
 };

@@ -10,6 +10,7 @@ const newsInstance = axios.create({
   },
 });
 
+// API call for get news headlines.
 export const getNewsData = createAsyncThunk(
   'getNewsData',
   async (endPoint: string) => {
@@ -19,6 +20,8 @@ export const getNewsData = createAsyncThunk(
     } catch (error) {}
   },
 );
+
+// API call for get search artical data
 export const getSearchArticles = async(payload:GetSearchArticles) => {
   const response = await newsInstance.get(
     `search?q=${payload.params}&country=us&language=en&pageSize=10&publisher=cnn.com,bbc.com`,

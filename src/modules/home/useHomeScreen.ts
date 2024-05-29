@@ -33,6 +33,7 @@ export const useHomeScreen = () => {
     'entertainment',
   ];
 
+  // Handling API call for fetch news headlines
   useEffect(() => {
     if (selectedCategory === 'All') {
       dispatch(
